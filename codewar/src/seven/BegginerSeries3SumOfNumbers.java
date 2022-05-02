@@ -22,10 +22,9 @@ public class BegginerSeries3SumOfNumbers {
 		System.out.println(GetSum(-1, 2));
 	}
 
-	//不正解
 	public static int GetSum(int a, int b) {
 		//Good luck!
-		return (int) ((double) a + b) / 2 * Math.max(a, b);
+		return (a + b) * (Math.abs(a - b) + 1) / 2;
 	}
 	//解答例1
 	//     public int GetSum(int a, int b)  {
